@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{905380E0-F6DA-4061-BDFC-47CD109014C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DesktopClient</RootNamespace>
+    <AssemblyName>DesktopClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\..\..\ColorTextBox\FastColoredTextBox-master\FastColoredTextBox\bin\Debug\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabStrip">
+      <HintPath>..\..\..\ColorTextBox\FastColoredTextBox-master\Tester\TabStrip.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyCompiler.cs" />
+    <Compile Include="IModelDebugger.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelDebugger.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SigningModel\DomainModel\PayloadDescriptor.cs" />
+    <Compile Include="SigningModel\Nodes\AggregationPartToDoc.nd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\AggregationPartToDoc.nd.Designer.cs">
+      <DependentUpon>AggregationPartToDoc.nd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\DocSplitter.nd.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\DocSplitter.nd.Designer.cs">
+      <DependentUpon>DocSplitter.nd.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\Start.nd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\Start.nd.Designer.cs">
+      <DependentUpon>Start.nd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\End.nd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\End.nd.Designer.cs">
+      <DependentUpon>End.nd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\IsDocumentSigned.nd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\IsDocumentSigned.nd.Designer.cs">
+      <DependentUpon>IsDocumentSigned.nd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\IsPart3Signed.nd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\IsPart3Signed.nd.Designer.cs">
+      <DependentUpon>IsPart3Signed.nd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\IsPart2Signed.nd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\IsPart2Signed.nd.Designer.cs">
+      <DependentUpon>IsPart2Signed.nd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\IsPart1Signed.nd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\IsPart1Signed.nd.Designer.cs">
+      <DependentUpon>IsPart1Signed.nd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\PartSigning3.nd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\PartSigning3.nd.Designer.cs">
+      <DependentUpon>PartSigning3.nd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\PartSigning2.nd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\PartSigning2.nd.Designer.cs">
+      <DependentUpon>PartSigning2.nd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\PartSigning1.nd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SigningModel\Nodes\PartSigning1.nd.Designer.cs">
+      <DependentUpon>PartSigning1.nd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SigningModel\SigningModel.mdl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SigningModel\SigningModel.mdl.Designer.cs">
+      <DependentUpon>SigningModel.mdl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\BaseUINode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\CSharpEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\CSharpEditor.Designer.cs">
+      <DependentUpon>CSharpEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\Note.cs" />
+    <Compile Include="UIControls\ObjectViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\ObjectViewer.Designer.cs">
+      <DependentUpon>ObjectViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\SplitterEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\SplitterEditor.Designer.cs">
+      <DependentUpon>SplitterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\DesignEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\DesignEditor.Designer.cs">
+      <DependentUpon>DesignEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\IUIModel.cs" />
+    <Compile Include="UIControls\IUINodeControl.cs" />
+    <Compile Include="UIControls\ModelTreeNode.cs" />
+    <Compile Include="UIControls\ModelRenderer.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SigningModel\DomainModel\Payload.obj.cs" />
+    <EmbeddedResource Include="SigningModel\Nodes\AggregationPartToDoc.nd.resx">
+      <DependentUpon>AggregationPartToDoc.nd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SigningModel\Nodes\DocSplitter.nd.resx">
+      <DependentUpon>DocSplitter.nd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SigningModel\Nodes\End.nd.resx">
+      <DependentUpon>End.nd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SigningModel\Nodes\IsDocumentSigned.nd.resx">
+      <DependentUpon>IsDocumentSigned.nd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SigningModel\Nodes\IsPart1Signed.nd.resx">
+      <DependentUpon>IsPart1Signed.nd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SigningModel\Nodes\IsPart2Signed.nd.resx">
+      <DependentUpon>IsPart2Signed.nd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SigningModel\Nodes\IsPart3Signed.nd.resx">
+      <DependentUpon>IsPart3Signed.nd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SigningModel\Nodes\PartSigning1.nd.resx">
+      <DependentUpon>PartSigning1.nd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SigningModel\Nodes\PartSigning2.nd.resx">
+      <DependentUpon>PartSigning2.nd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SigningModel\Nodes\PartSigning3.nd.resx">
+      <DependentUpon>PartSigning3.nd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SigningModel\Nodes\Start.nd.resx">
+      <DependentUpon>Start.nd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SigningModel\SigningModel.mdl.resx">
+      <DependentUpon>SigningModel.mdl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\CSharpEditor.resx">
+      <DependentUpon>CSharpEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\ObjectViewer.resx">
+      <DependentUpon>ObjectViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\SplitterEditor.resx">
+      <DependentUpon>SplitterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\DesignEditor.resx">
+      <DependentUpon>DesignEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClientAPI\ClientAPI.csproj">
+      <Project>{3247eff6-bcc6-4b6e-a5d6-d9aad1790efe}</Project>
+      <Name>ClientAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{4b612e22-bd3c-4255-9bb9-92c9d98108ca}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Main\Common.csproj">
+      <Project>{574cc337-534a-4f4e-a7e9-c466274ed95d}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aggregator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Decision1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Splitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transform1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\End.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SigningM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectedNode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectedCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ActiveNode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause_Debug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop_Debug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Continue_Debug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start_debug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Note-49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Note-29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breakpoint.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

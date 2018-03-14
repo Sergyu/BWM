@@ -1,0 +1,29 @@
+Silviu:
+- adaugarea de dimensiuni
+	- timp
+	- cost
+- raport pe dimensiuni	
+	- branches timp max / min
+	- branches cost min / max
+
+ideie:
+	- mutation tests de integrat, care intr-un range predefinit de User sa ruleze o suita de teste sa verifice anduranta modelului. 
+	De ex: 
+		- productia imi ocupa 2 sapt astazi cu costul X. Mutation test sa ruleze o serie de teste modificand timpul de productie
+			3 saptamani
+			4 saptamani
+			1 luna
+			
+			care sunt costurile?
+			Poate eu mi le permit dar nu stiu?
+
+Mihai feedback:
+	- de pregatit sales speach bine axat pe piata existenta de simulatoare
+	- de modelat un process well known (de exemplu livrarea prin curier) dar mai complex decat ala de astazi
+	- cons:
+		- acceptance-ul de la BA avand in vedere ca trebuie sa programeze
+	- de verificat:
+		- daca procesul de modelare cu obiecte iti ia prea mult timp poate sa intoarca userii de la Tool. 
+		Care este echilibrul intre comoditate si embedded features
+	- de verificat ideea de templates (referitoare la pctul de mai sus cu comoditate). Template de login, template de subscribe etc...
+	
