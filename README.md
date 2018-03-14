@@ -1,5 +1,5 @@
 # BWM
-The aim was to have the Business Analysis guys having their own IDE (as developers have MS VisualStudio, IntelliJ, Eclipse), 
+The aim was to let the Business Analysis guys to have their own IDE (as developers have MS VisualStudio, IntelliJ, Eclipse), 
 to put some sort of ordered spell on their work and to help them during their journeys. 
 What the POC does and what was the plan (at the tail end of this article you'll find a youtube presentation of the workable prototype):
 
