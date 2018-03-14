@@ -402,7 +402,7 @@ namespace DesktopClient
             this.pnlLeftHand.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pnlLeftHand.Controls.Add(this.tsFiles);
             this.pnlLeftHand.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlLeftHand.Location = new System.Drawing.Point(0, 25);
+            this.pnlLeftHand.Location = new System.Drawing.Point(0, 29);
             this.pnlLeftHand.Name = "pnlLeftHand";
             this.pnlLeftHand.Size = new System.Drawing.Size(1091, 687);
             this.pnlLeftHand.TabIndex = 1;
@@ -439,7 +439,7 @@ namespace DesktopClient
             this.btnStopDebug});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1091, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1091, 29);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -449,7 +449,7 @@ namespace DesktopClient
             this.newToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripButton.Image")));
             this.newToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripButton.Name = "newToolStripButton";
-            this.newToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.newToolStripButton.Size = new System.Drawing.Size(23, 26);
             this.newToolStripButton.Text = "&New";
             // 
             // openToolStripButton
@@ -458,7 +458,7 @@ namespace DesktopClient
             this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
             this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripButton.Name = "openToolStripButton";
-            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.openToolStripButton.Size = new System.Drawing.Size(23, 26);
             this.openToolStripButton.Text = "&Open";
             // 
             // saveToolStripButton
@@ -467,7 +467,7 @@ namespace DesktopClient
             this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
             this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveToolStripButton.Size = new System.Drawing.Size(23, 26);
             this.saveToolStripButton.Text = "&Save";
             // 
             // printToolStripButton
@@ -476,7 +476,7 @@ namespace DesktopClient
             this.printToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripButton.Image")));
             this.printToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripButton.Name = "printToolStripButton";
-            this.printToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.printToolStripButton.Size = new System.Drawing.Size(23, 26);
             this.printToolStripButton.Text = "&Print";
             // 
             // helpToolStripButton
@@ -485,36 +485,34 @@ namespace DesktopClient
             this.helpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripButton.Image")));
             this.helpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.helpToolStripButton.Name = "helpToolStripButton";
-            this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.helpToolStripButton.Size = new System.Drawing.Size(23, 26);
             this.helpToolStripButton.Text = "He&lp";
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 29);
             // 
             // btnDebug
             // 
-            this.btnDebug.AutoSize = true;
             this.btnDebug.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.btnDebug.Image = global::DesktopClient.Properties.Resources.Start_debug;
             this.btnDebug.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnDebug.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDebug.Name = "btnDebug";
-            this.btnDebug.Size = new System.Drawing.Size(48, 23);
+            this.btnDebug.Size = new System.Drawing.Size(50, 26);
             this.btnDebug.Text = "Debug";
             this.btnDebug.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDebug.Click += new System.EventHandler(this.btnDebug_Click);
             // 
             // btnContinueDebug
             // 
-            this.btnContinueDebug.AutoSize = true;
             this.btnContinueDebug.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.btnContinueDebug.Image = global::DesktopClient.Properties.Resources.Continue_Debug;
             this.btnContinueDebug.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnContinueDebug.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnContinueDebug.Name = "btnContinueDebug";
-            this.btnContinueDebug.Size = new System.Drawing.Size(73, 21);
+            this.btnContinueDebug.Size = new System.Drawing.Size(77, 26);
             this.btnContinueDebug.Text = "Continue";
             this.btnContinueDebug.Visible = false;
             this.btnContinueDebug.Click += new System.EventHandler(this.btnContinue_Click);
@@ -525,7 +523,7 @@ namespace DesktopClient
             this.btnPauseDebug.Image = global::DesktopClient.Properties.Resources.Pause_Debug;
             this.btnPauseDebug.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPauseDebug.Name = "btnPauseDebug";
-            this.btnPauseDebug.Size = new System.Drawing.Size(23, 22);
+            this.btnPauseDebug.Size = new System.Drawing.Size(23, 26);
             this.btnPauseDebug.Text = "toolStripButton2";
             this.btnPauseDebug.Click += new System.EventHandler(this.btnPauseDebug_Click);
             // 
@@ -535,7 +533,7 @@ namespace DesktopClient
             this.btnStopDebug.Image = global::DesktopClient.Properties.Resources.Stop_Debug;
             this.btnStopDebug.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnStopDebug.Name = "btnStopDebug";
-            this.btnStopDebug.Size = new System.Drawing.Size(23, 22);
+            this.btnStopDebug.Size = new System.Drawing.Size(23, 26);
             this.btnStopDebug.Text = "toolStripButton3";
             this.btnStopDebug.Click += new System.EventHandler(this.btnStopDebug_Click);
             // 
@@ -705,7 +703,7 @@ namespace DesktopClient
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
-            this.Text = "Modeling Studio";
+            this.Text = "Workflow Modeling Studio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
